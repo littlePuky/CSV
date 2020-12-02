@@ -13,7 +13,7 @@ namespace MergeCsv
         public static string FileName = "";
         public static string FolderPath;
 
-        public static void A1(string imputFolder, string outputFile)
+        public static void A1(string imputFolder, string outputFile, DateTime start, DateTime end)
         {
             if (File.Exists(outputFile))
             {
@@ -28,6 +28,11 @@ namespace MergeCsv
 
             foreach (var log in logs)
             {
+                var fileDate = File.GetLastWriteTime(log);
+                if (!(fileDate>=start && fileDate<=end))
+                {
+                    continue;
+                }
                 var filePath = Path.GetDirectoryName(log);
 
                 string GetLine(string file1, int line1 = 6)
@@ -55,6 +60,7 @@ namespace MergeCsv
                     {   
                         FileInfo info = new FileInfo(file);
                         Modified = info.LastWriteTime.ToShortDateString();
+                        var asd = File.GetLastWriteTimeUtc(file);
                         var data = double.Parse(line);
                         if (data < 0)
                         {

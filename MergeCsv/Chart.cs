@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Microsoft.Office.Interop.Excel;
 
 namespace MergeCsv
@@ -7,13 +8,13 @@ namespace MergeCsv
     {
         static string chartStartCell = "E1";
         static string chartEndCell = "F15";
-        static string graphTitle = "KPI Average Times";
+        static string graphTitle = "KPI Averages ";
         static string xAxis = "Tests";
 
         static string yAxis = "Time";
         //static string _columnLetter;
 
-        public static void CreateChart(string inputFolder, string outputFile)
+        public static void CreateChart(string inputFolder, string outputFile, string start, string end)
         {
             if (File.Exists(outputFile + @"Chart.xlsx"))
             {
@@ -66,6 +67,7 @@ namespace MergeCsv
             chart.SetSourceData(range);
 
             // Set chart properties.
+            graphTitle = graphTitle + $"{start} - {end}";
             chart.ChartType = XlChartType.xlBarClustered;
             chart.ApplyDataLabels();
             chart.ChartWizard(Source: range,
