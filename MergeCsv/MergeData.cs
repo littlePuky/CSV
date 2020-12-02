@@ -9,17 +9,19 @@ namespace MergeCsv
             Console.WriteLine("Anything special to convert?");
             string whatToConvert = Console.ReadLine();
             Console.Write("Specify CSV dir: ");
-            string dir = Console.ReadLine();
+            string imputDir = Console.ReadLine();
+            Console.Write("Specify Output path and file to save: ");
+            string outputFile = Console.ReadLine();
             switch (whatToConvert)
             {
                 case "a1":
-                    Merge.A1(dir);
-                    Merge.average(dir+".csv");
+                    Merge.A1(imputDir, outputFile);
+                    Merge.average(outputFile);
                     Console.WriteLine("Chart");
-                    Chart.CreateChart(dir+".csv", dir);
+                    Chart.CreateChart(outputFile, outputFile);
                     break;
                 case "chart":
-                    Chart.CreateChart(dir+".csv", dir);
+                    Chart.CreateChart(imputDir + ".csv", outputFile);
                     break;
                 default:
                     Merge.Any();

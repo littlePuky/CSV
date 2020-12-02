@@ -13,15 +13,15 @@ namespace MergeCsv
         static string yAxis = "Time";
         //static string _columnLetter;
 
-        public static void CreateChart(string folder, string output)
+        public static void CreateChart(string inputFolder, string outputFile)
         {
-            if (File.Exists(output + @"Chart.xlsx"))
+            if (File.Exists(outputFile + @"Chart.xlsx"))
             {
-                File.Delete(output + @"Chart.xlsx");
+                File.Delete(outputFile + @"Chart.xlsx");
             }
             // Open Excel and get first worksheet.
             var application = new Application();
-            var workbook = application.Workbooks.Open(folder);
+            var workbook = application.Workbooks.Open(inputFolder);
             var worksheet = workbook.Worksheets[1] as Worksheet;
             Range xlRange = worksheet.UsedRange;
             var rowCount = xlRange.Rows.Count.ToString();
@@ -57,12 +57,12 @@ namespace MergeCsv
 
             // Add chart.
             var charts = worksheet.ChartObjects() as ChartObjects;
-            var chartObject = charts.Add(60, 10, 1300, 500);
+            var chartObject = charts.Add(60, 10, 800, 400);
             var chart = chartObject.Chart;
 
             // Set chart range.
             //chartEndCell = _columnLetter + rowCount;
-            var range = worksheet.get_Range(chartStartCell, chartEndCell);
+            var range = worksheet.Range[chartStartCell, chartEndCell];
             chart.SetSourceData(range);
 
             // Set chart properties.
@@ -74,7 +74,7 @@ namespace MergeCsv
                 ValueTitle: yAxis);
 
             // Save.
-            workbook.SaveAs(output + @"Chart.xlsx");
+            workbook.SaveAs(outputFile + @"Chart.xlsx");
         }
     }
 }

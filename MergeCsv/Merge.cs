@@ -13,13 +13,13 @@ namespace MergeCsv
         public static string FileName = "";
         public static string FolderPath;
 
-        public static void A1(string folder)
+        public static void A1(string imputFolder, string outputFile)
         {
-            if (File.Exists(folder+".csv"))
+            if (File.Exists(outputFile))
             {
-                File.Delete(folder+".csv");
+                File.Delete(outputFile);
             }
-            FolderPath = folder;
+            FolderPath = imputFolder;
             List<string> STB5019 = new List<string>();
             STB5019.Add("STB,FileName,Date,Time");
             List<string> STB5020 = new List<string>();
@@ -76,7 +76,7 @@ namespace MergeCsv
             }
 
             OutputFile = FolderPath + ".csv";
-            var csvWriter = new StreamWriter(OutputFile);
+            var csvWriter = new StreamWriter(outputFile);
             foreach (var line in STB5019)
             {
                 csvWriter.WriteLine(line);
@@ -95,11 +95,11 @@ namespace MergeCsv
 
         public static string OutputFile;
 
-        public static void average(string folder)
+        public static void average(string InputFolder)
         {
             Console.WriteLine("Average");
             Excel.Application excel = new Excel.Application();
-            Excel.Workbook sheet = excel.Workbooks.Open(folder);
+            Excel.Workbook sheet = excel.Workbooks.Open(InputFolder);
             Excel.Worksheet x = excel.ActiveSheet as Excel.Worksheet;
             x.Cells[1, 5] = "KPI_1_Average";
             x.Range["F1"].Formula = "=AVERAGEIF(B:BT,\"KPI_1_PageTransition_results\",D:D)";
