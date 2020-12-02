@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_rebase_[Default_Changelist]1" date="1606905999339" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="MergeCsv/obj/Debug/net48/MergeCsv.exe" />
+    <option name="AFTER_PATH" value="MergeCsv/obj/Debug/net48/MergeCsv.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/MergeCsv.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="MergeCsv/bin/Debug/net48/MergeCsv.pdb" />
+    <option name="AFTER_PATH" value="MergeCsv/bin/Debug/net48/MergeCsv.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/MergeCsv.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="MergeCsv/bin/Debug/net48/MergeCsv.exe" />
+    <option name="AFTER_PATH" value="MergeCsv/bin/Debug/net48/MergeCsv.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/MergeCsv1.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="MergeCsv/obj/Debug/net48/MergeCsv.pdb" />
+    <option name="AFTER_PATH" value="MergeCsv/obj/Debug/net48/MergeCsv.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/MergeCsv1.pdb" />
+  </binary>
+</changelist>
