@@ -18,14 +18,13 @@ namespace MergeCsv
             Console.Write("End date: ");
             string end = Console.ReadLine();
             DateTime endDate = DateTime.Parse(end + " 11:59:00 PM");
-            Console.Write("Specify Output path and file to save: ");
-            string outputFile = Console.ReadLine();
-
             if (startDate > endDate)
             {
                 Console.WriteLine("EndDate > StartDate");
                 Environment.Exit(0);
             }
+            Console.Write("Specify Output path and file to save: ");
+            string outputFile = Console.ReadLine();
 
             switch (whatToConvert)
             {
@@ -43,7 +42,7 @@ namespace MergeCsv
                     Chart.CreateChart(inputDir + ".csv", outputFile, start, end);
                     break;
                 default:
-                    Merge.Any();
+                    Merge.Any(inputDir);
                     break;
             }
         }

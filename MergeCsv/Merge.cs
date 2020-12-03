@@ -155,22 +155,19 @@ namespace MergeCsv
             sheet.Save();
             excel.Quit();
         }
-        public static void Any()
+        public static void Any(string input)
         {
-            Console.Write("Specify CSV dir: ");
-            FolderPath = Console.ReadLine();
-            OutputFile = FolderPath + ".csv";
+            OutputFile = input + ".csv";
             var csvWriter = new StreamWriter(OutputFile);
-            string[] files = Directory.GetFiles(FolderPath, "*.csv", SearchOption.AllDirectories);
+            string[] files = Directory.GetFiles(input, "*.csv", SearchOption.AllDirectories);
             foreach (var file in files)
             {
                 string[] allLines = File.ReadAllLines(file);
-                foreach (var t in allLines)
+                foreach (var line in allLines)
                 {
                     var info = new FileInfo(file);
                     Modified = info.LastWriteTime.ToString();
-                    var data = t;
-                    CreationTime = File.GetCreationTime(file).ToString();
+                    var data = line;
                     FileName = Path.GetFileNameWithoutExtension(file);
                     csvWriter.WriteLine($"{FileName}, {Modified}, {data}");
                     csvWriter.Flush();
