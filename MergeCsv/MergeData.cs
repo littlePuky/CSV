@@ -1,15 +1,16 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace MergeCsv
 {
     class MergeAll
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Anything special to convert?");
             string whatToConvert = Console.ReadLine();
             Console.Write("Specify CSV dir: ");
-            string imputDir = Console.ReadLine();
+            string inputDir = Console.ReadLine();
             Console.WriteLine("Date to convert: ");
             Console.Write("Start date: ");
             string start = Console.ReadLine();
@@ -20,16 +21,26 @@ namespace MergeCsv
             Console.Write("Specify Output path and file to save: ");
             string outputFile = Console.ReadLine();
 
+            if (startDate > endDate)
+            {
+                Console.WriteLine("EndDate > StartDate");
+                Environment.Exit(0);
+            }
+
             switch (whatToConvert)
             {
                 case "a1":
-                    Merge.A1(imputDir, outputFile, startDate, endDate);
-                    Merge.average(outputFile);
+                    var stopwatch = Stopwatch.StartNew();
+                    stopwatch.Start();
+                    Merge.A1(inputDir, outputFile, startDate, endDate);
+                    Merge.Average(outputFile);
                     Console.WriteLine("Chart");
                     Chart.CreateChart(outputFile, outputFile, start, end);
+                    stopwatch.Stop();
+                    Console.WriteLine("Elapsed Time: " + stopwatch.Elapsed);
                     break;
                 case "chart":
-                    Chart.CreateChart(imputDir + ".csv", outputFile, start, end);
+                    Chart.CreateChart(inputDir + ".csv", outputFile, start, end);
                     break;
                 default:
                     Merge.Any();

@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using Microsoft.Office.Interop.Excel;
 
 namespace MergeCsv
@@ -10,7 +9,6 @@ namespace MergeCsv
         static string chartEndCell = "F15";
         static string graphTitle = "KPI Averages ";
         static string xAxis = "Tests";
-
         static string yAxis = "Time";
         //static string _columnLetter;
 
@@ -68,9 +66,14 @@ namespace MergeCsv
 
             // Set chart properties.
             graphTitle = graphTitle + $"{start} - {end}";
+            var seriesCollection = (SeriesCollection)chart.SeriesCollection();
+            Series s1 = seriesCollection.NewSeries();
+            s1.Name = "Border value";
+            s1.MarkerStyle = XlMarkerStyle.xlMarkerStyleAutomatic;
+            s1.Values = worksheet.Range["G1", "G15"];
             chart.ChartType = XlChartType.xlBarClustered;
             chart.ApplyDataLabels();
-            chart.ChartWizard(Source: range,
+            chart.ChartWizard(SeriesLabels:"Tests",
                 Title: graphTitle,
                 CategoryTitle: xAxis,
                 ValueTitle: yAxis);

@@ -60,9 +60,9 @@
         <option value="$PROJECT_DIR$/MergeCsv/asd.cs" />
         <option value="$PROJECT_DIR$/MergeCsv/ChartOne.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/MergeCsv/Merge.cs" />
-        <option value="$PROJECT_DIR$/MergeCsv/Chart.cs" />
         <option value="$PROJECT_DIR$/MergeCsv/MergeData.cs" />
+        <option value="$PROJECT_DIR$/MergeCsv/Chart.cs" />
+        <option value="$PROJECT_DIR$/MergeCsv/Merge.cs" />
       </list>
     </option>
   </component>
@@ -145,7 +145,7 @@
       <workItem from="1606823529676" duration="21430000" />
       <workItem from="1606910674496" duration="647000" />
       <workItem from="1606911347023" duration="2899000" />
-      <workItem from="1606914773034" duration="9387000" />
+      <workItem from="1606914773034" duration="13197000" />
     </task>
     <task id="LOCAL-00001" summary="added conversion to 2 files for each STB">
       <created>1606557203410</created>
@@ -266,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606916669119</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added daytime interval">
+      <created>1606927938969</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606927938969</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +312,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="trivial" />
     <MESSAGE value="added output dir request" />
-    <option name="LAST_COMMIT_MESSAGE" value="added output dir request" />
+    <MESSAGE value="added daytime interval" />
+    <option name="LAST_COMMIT_MESSAGE" value="added daytime interval" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="183" key="#Deployment" timestamp="1606911204941">
@@ -336,22 +344,22 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2758" y="423" key="Github.ShareDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606493867449" />
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1606927388548">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1606980604702">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606927388548" />
-    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1606927388548">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606980604702" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1606980604701">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606927388548" />
-    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1606927388548">
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606980604701" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1606980604701">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606927388548" />
-    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1606927388548">
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606980604701" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1606980604702">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606927388548" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606980604702" />
     <state x="2472" y="257" key="Rider.ProjectTemplateDialog.Size" timestamp="1606285449059">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -368,18 +376,18 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2766" y="439" key="VCS.EditChangelistDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606911174586" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1606916671529">
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1606927940754">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606916671529" />
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606927940754" />
     <state x="2012" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1606906380375">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2012" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606906380375" />
-    <state x="2536" y="243" key="run.anything.popup" timestamp="1606898087880">
+    <state x="2536" y="243" key="run.anything.popup" timestamp="1606978055009">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2536" y="243" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606898087880" />
+    <state x="2536" y="243" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606978055009" />
     <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606911419078">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
