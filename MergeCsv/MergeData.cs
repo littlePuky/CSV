@@ -23,7 +23,7 @@ namespace MergeCsv
                 Console.WriteLine("EndDate > StartDate");
                 Environment.Exit(0);
             }
-            Console.Write("Specify Output path and file to save: ");
+            Console.Write("Specify Output path and file destination: ");
             string outputFile = Console.ReadLine();
 
             switch (whatToConvert)
@@ -42,7 +42,7 @@ namespace MergeCsv
                     Chart.CreateChart(inputDir + ".csv", outputFile, start, end);
                     break;
                 default:
-                    Merge.Any(inputDir);
+                    Merge.Any(inputDir, outputFile);
                     break;
             }
         }

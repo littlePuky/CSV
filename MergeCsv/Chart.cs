@@ -73,7 +73,7 @@ namespace MergeCsv
             s1.Values = worksheet.Range["G1", "G15"];
             chart.ChartType = XlChartType.xlBarClustered;
             chart.ApplyDataLabels();
-            chart.ChartWizard(SeriesLabels:"Tests",
+            chart.ChartWizard(
                 Title: graphTitle,
                 CategoryTitle: xAxis,
                 ValueTitle: yAxis);

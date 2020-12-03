@@ -16,9 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60982cf2-2031-4259-a9df-6ad45e728baa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeCsv/Merge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/Merge.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeCsv/MergeCsv.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/MergeCsv.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeCsv/MergeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/MergeData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MergeCsv/Chart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/Chart.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +143,7 @@
       <workItem from="1606823529676" duration="21430000" />
       <workItem from="1606910674496" duration="647000" />
       <workItem from="1606911347023" duration="2899000" />
-      <workItem from="1606914773034" duration="19068000" />
+      <workItem from="1606914773034" duration="21267000" />
     </task>
     <task id="LOCAL-00001" summary="added conversion to 2 files for each STB">
       <created>1606557203410</created>
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606980919113</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixes to Any()">
+      <created>1606988600782</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1606988600782</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +326,8 @@
     <MESSAGE value="added output dir request" />
     <MESSAGE value="added daytime interval" />
     <MESSAGE value="added max values and stopwatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="added max values and stopwatch" />
+    <MESSAGE value="fixes to Any()" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes to Any()" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="183" key="#Deployment" timestamp="1606911204941">
@@ -384,10 +390,10 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2766" y="439" key="VCS.EditChangelistDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606911174586" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1606980941445">
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1606988602128">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606980941445" />
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606988602128" />
     <state x="2012" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1606906380375">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>

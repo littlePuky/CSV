@@ -155,9 +155,9 @@ namespace MergeCsv
             sheet.Save();
             excel.Quit();
         }
-        public static void Any(string input)
+        public static void Any(string input, string output)
         {
-            OutputFile = input + ".csv";
+            OutputFile = output + ".csv";
             var csvWriter = new StreamWriter(OutputFile);
             string[] files = Directory.GetFiles(input, "*.csv", SearchOption.AllDirectories);
             foreach (var file in files)
