@@ -11,12 +11,20 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60982cf2-2031-4259-a9df-6ad45e728baa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MergeCsv/Chart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/Chart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MergeCsv/Merge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/Merge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MergeCsv/MergeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/MergeData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +38,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -59,8 +68,8 @@
         <option value="$PROJECT_DIR$/MergeCsv/ChartOne.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/MergeCsv/MergeData.cs" />
-        <option value="$PROJECT_DIR$/MergeCsv/Merge.cs" />
         <option value="$PROJECT_DIR$/MergeCsv/Chart.cs" />
+        <option value="$PROJECT_DIR$/MergeCsv/Merge.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +130,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="60982cf2-2031-4259-a9df-6ad45e728baa" name="Default Changelist" comment="" />
-      <changelist id="" name="trivial" comment="" />
       <created>1606284920850</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -144,6 +152,7 @@
       <workItem from="1606910674496" duration="647000" />
       <workItem from="1606911347023" duration="2899000" />
       <workItem from="1606914773034" duration="21267000" />
+      <workItem from="1607325051960" duration="4517000" />
     </task>
     <task id="LOCAL-00001" summary="added conversion to 2 files for each STB">
       <created>1606557203410</created>
@@ -298,7 +307,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -346,10 +367,10 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2629" y="361" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606740640562" />
-    <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1606906380375">
+    <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1607000870129">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606906380375" />
+    <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607000870129" />
     <state x="2410" y="184" key="EditorConfigExporter" timestamp="1606740646423">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -358,22 +379,22 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2758" y="423" key="Github.ShareDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606493867449" />
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1606988376513">
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1607331557418">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606988376513" />
-    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1606988376512">
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607331557418" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1607331557418">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606988376512" />
-    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1606988376512">
+    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607331557418" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1607331557417">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606988376512" />
-    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1606988376513">
+    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607331557417" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1607331557418">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606988376513" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607331557418" />
     <state x="2472" y="257" key="Rider.ProjectTemplateDialog.Size" timestamp="1606285449059">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>

@@ -9,18 +9,20 @@ namespace MergeCsv
         static string chartEndCell = "F15";
         static string graphTitle = "KPI Averages ";
         static string xAxis = "Tests";
+
         static string yAxis = "Time";
         //static string _columnLetter;
 
-        public static void CreateChart(string inputFolder, string outputFile, string start, string end)
+        public static void CreateChart(string inputFolder, string start, string end)
         {
-            if (File.Exists(outputFile + @"Chart.xlsx"))
+            if (File.Exists(inputFolder + "Chart.xlsx"))
             {
-                File.Delete(outputFile + @"Chart.xlsx");
+                File.Delete(inputFolder + "Chart.xlsx");
             }
+
             // Open Excel and get first worksheet.
             var application = new Application();
-            var workbook = application.Workbooks.Open(inputFolder);
+            var workbook = application.Workbooks.Open(inputFolder + ".xlsx");
             var worksheet = workbook.Worksheets[1] as Worksheet;
             Range xlRange = worksheet.UsedRange;
             var rowCount = xlRange.Rows.Count.ToString();
@@ -66,7 +68,7 @@ namespace MergeCsv
 
             // Set chart properties.
             graphTitle = graphTitle + $"{start} - {end}";
-            var seriesCollection = (SeriesCollection)chart.SeriesCollection();
+            var seriesCollection = (SeriesCollection) chart.SeriesCollection();
             Series s1 = seriesCollection.NewSeries();
             s1.Name = "Border value";
             s1.MarkerStyle = XlMarkerStyle.xlMarkerStyleAutomatic;
@@ -79,7 +81,7 @@ namespace MergeCsv
                 ValueTitle: yAxis);
 
             // Save.
-            workbook.SaveAs(outputFile + @"Chart.xlsx");
+            workbook.SaveAs(inputFolder + "Chart.xlsx");
         }
     }
 }

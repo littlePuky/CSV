@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace MergeCsv
@@ -12,6 +14,7 @@ namespace MergeCsv
         public static string CreationTime;
         public static string FileName = "";
         public static string FolderPath;
+        public static string OutputFile;
 
         public static void A1(string inputFolder, string outputFile, DateTime start, DateTime end)
         {
@@ -19,6 +22,7 @@ namespace MergeCsv
             {
                 File.Delete(outputFile);
             }
+
             FolderPath = inputFolder;
             List<string> STB5019 = new List<string>();
             STB5019.Add("STB,FileName,Date,Time");
@@ -29,10 +33,11 @@ namespace MergeCsv
             foreach (var log in logs)
             {
                 var fileDate = File.GetLastWriteTime(log);
-                if (!(fileDate>=start && fileDate<=end))
+                if (!(fileDate >= start && fileDate <= end))
                 {
                     continue;
                 }
+
                 var filePath = Path.GetDirectoryName(log);
 
                 string GetLine(string file1, int line1 = 6)
@@ -53,11 +58,10 @@ namespace MergeCsv
                 string[] files = Directory.GetFiles(filePath, "*.csv", SearchOption.AllDirectories);
                 foreach (var file in files)
                 {
-                    
                     string[] allLines = File.ReadAllLines(file);
                     FileName = Path.GetFileNameWithoutExtension(file);
                     foreach (var line in allLines)
-                    {   
+                    {
                         FileInfo info = new FileInfo(file);
                         Modified = info.LastWriteTime.ToShortDateString();
                         var asd = File.GetLastWriteTimeUtc(file);
@@ -66,8 +70,9 @@ namespace MergeCsv
                         {
                             continue;
                         }
+
                         CreationTime = File.GetCreationTime(file).ToString();
-                        
+
                         if (GetLine(log).Contains("STB_Type5019"))
                         {
                             STB5019.Add($"STB_Type5019,{FileName},{Modified},{data}");
@@ -96,16 +101,20 @@ namespace MergeCsv
                 csvWriter.WriteLine(line);
                 csvWriter.Flush();
             }
+
             csvWriter.Close();
         }
 
-        public static string OutputFile;
-
-        public static void Average(string inputFolder)
+        public static void Average(string input, string output)
         {
+            if (File.Exists(output + ".xlsx"))
+            {
+                File.Delete(output + ".xlsx");
+            }
+
             Console.WriteLine("Average");
             Excel.Application excel = new Excel.Application();
-            Excel.Workbook sheet = excel.Workbooks.Open(inputFolder);
+            Excel.Workbook sheet = excel.Workbooks.Open(input);
             Excel.Worksheet x = excel.ActiveSheet as Excel.Worksheet;
             x.Cells[1, 5] = "KPI_1_Average";
             x.Cells[1, 7] = "0.5";
@@ -152,9 +161,14 @@ namespace MergeCsv
             x.Cells[15, 5] = "KPI_30_Standby";
             x.Cells[15, 7] = "15.0";
             x.Range["F15"].Formula = "=AVERAGEIF(B:BT,\"KPI_30_Standby_UntilStream_results\",D:D)";
-            sheet.Save();
+            sheet.SaveAs(output + ".xlsx", Excel.XlFileFormat.xlOpenXMLWorkbook, Type.Missing, Type.Missing,
+                Type.Missing, Type.Missing, AccessMode: Excel.XlSaveAsAccessMode.xlNoChange,
+                ConflictResolution: Type.Missing, AddToMru: Type.Missing,
+                TextCodepage: Type.Missing, TextVisualLayout: Type.Missing, Local: Type.Missing);
+            File.Delete(input);
             excel.Quit();
         }
+
         public static void Any(string input, string output)
         {
             OutputFile = output + ".csv";

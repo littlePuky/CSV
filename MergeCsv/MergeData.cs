@@ -23,6 +23,7 @@ namespace MergeCsv
                 Console.WriteLine("EndDate > StartDate");
                 Environment.Exit(0);
             }
+
             Console.Write("Specify Output path and file destination: ");
             string outputFile = Console.ReadLine();
 
@@ -32,14 +33,14 @@ namespace MergeCsv
                     var stopwatch = Stopwatch.StartNew();
                     stopwatch.Start();
                     Merge.A1(inputDir, outputFile, startDate, endDate);
-                    Merge.Average(outputFile);
+                    Merge.Average(outputFile, inputDir);
                     Console.WriteLine("Chart");
-                    Chart.CreateChart(outputFile, outputFile, start, end);
+                    Chart.CreateChart(inputDir, start, end);
                     stopwatch.Stop();
                     Console.WriteLine("Elapsed Time: " + stopwatch.Elapsed);
                     break;
                 case "chart":
-                    Chart.CreateChart(inputDir + ".csv", outputFile, start, end);
+                    Chart.CreateChart(inputDir, start, end);
                     break;
                 default:
                     Merge.Any(inputDir, outputFile);
