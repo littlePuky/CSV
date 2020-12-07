@@ -15,11 +15,11 @@ namespace MergeCsv
             string inputDir = Console.ReadLine();
             Console.Write("Start date: ");
             string start = Console.ReadLine();
-            startDate = start=="" ? DateTime.MinValue : Convert.ToDateTime(start + " 12:00:00 AM");
+            startDate = start == "" ? DateTime.MinValue : Convert.ToDateTime(start + " 12:00:00 AM");
             Console.Write("End date: ");
             string end = Console.ReadLine();
-            endDate = end=="" ? DateTime.Now : DateTime.Parse(end + " 11:59:00 PM");
-            
+            endDate = end == "" ? DateTime.Now : DateTime.Parse(end + " 11:59:00 PM");
+
             if (startDate > endDate)
             {
                 Console.WriteLine("EndDate > StartDate");
@@ -27,7 +27,7 @@ namespace MergeCsv
             }
 
             Console.Write("Specify Output path and file destination: ");
-            string outputFile = Console.ReadLine();
+            string outputFile = Console.ReadLine() + ".csv";
 
             switch (whatToConvert)
             {
@@ -40,9 +40,6 @@ namespace MergeCsv
                     Chart.CreateChart(inputDir, start, end);
                     stopwatch.Stop();
                     Console.WriteLine("Elapsed Time: " + stopwatch.Elapsed);
-                    break;
-                case "chart":
-                    Chart.CreateChart(inputDir, start, end);
                     break;
                 default:
                     Merge.Any(inputDir, outputFile);
