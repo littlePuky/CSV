@@ -7,6 +7,8 @@ namespace MergeCsv
     {
         static void Main()
         {
+            DateTime startDate;
+            DateTime endDate;
             Console.WriteLine("Anything special to convert?");
             string whatToConvert = Console.ReadLine();
             Console.Write("Specify CSV dir: ");
@@ -14,10 +16,11 @@ namespace MergeCsv
             Console.WriteLine("Date to convert: ");
             Console.Write("Start date: ");
             string start = Console.ReadLine();
-            DateTime startDate = Convert.ToDateTime(start + " 12:00:00 AM");
+            startDate = start=="" ? DateTime.MinValue : Convert.ToDateTime(start + " 12:00:00 AM");
             Console.Write("End date: ");
             string end = Console.ReadLine();
-            DateTime endDate = DateTime.Parse(end + " 11:59:00 PM");
+            endDate = end=="" ? DateTime.Now : DateTime.Parse(end + " 11:59:00 PM");
+            
             if (startDate > endDate)
             {
                 Console.WriteLine("EndDate > StartDate");
