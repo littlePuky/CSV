@@ -37,7 +37,7 @@ namespace MergeCsv
                     Merge.A1(inputDir, outputFile, startDate, endDate);
                     Merge.Average(outputFile, inputDir);
                     Console.WriteLine("Chart");
-                    Chart.CreateChart(inputDir, start, end);
+                    Chart.CreateChart(inputDir, startDate, endDate);
                     stopwatch.Stop();
                     Console.WriteLine("Elapsed Time: " + stopwatch.Elapsed);
                     break;

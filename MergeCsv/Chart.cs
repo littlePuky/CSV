@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Microsoft.Office.Interop.Excel;
 
 namespace MergeCsv
@@ -13,7 +14,7 @@ namespace MergeCsv
         static string yAxis = "Time";
         //static string _columnLetter;
 
-        public static void CreateChart(string inputFolder, string start, string end)
+        public static void CreateChart(string inputFolder, DateTime startTime, DateTime endTime)
         {
             // Open Excel and get first worksheet.
             var application = new Application();
@@ -62,7 +63,7 @@ namespace MergeCsv
             chart.SetSourceData(range);
 
             // Set chart properties.
-            graphTitle = graphTitle + $"{start} - {end}";
+            graphTitle += startTime == DateTime.MinValue ? $"until {endTime}" : $"{startTime} - {endTime}";
             var seriesCollection = (SeriesCollection) chart.SeriesCollection();
             var s1 = seriesCollection.NewSeries();
             s1.Name = "Border value";
