@@ -15,16 +15,11 @@ namespace MergeCsv
 
         public static void CreateChart(string inputFolder, string start, string end)
         {
-            if (File.Exists(inputFolder + "Chart.xlsx"))
-            {
-                File.Delete(inputFolder + "Chart.xlsx");
-            }
-
             // Open Excel and get first worksheet.
             var application = new Application();
             var workbook = application.Workbooks.Open(inputFolder + ".xlsx");
             var worksheet = workbook.Worksheets[1] as Worksheet;
-            Range xlRange = worksheet.UsedRange;
+            var xlRange = worksheet.UsedRange;
             var rowCount = xlRange.Rows.Count.ToString();
             var columnCount = xlRange.Columns.Count;
             // switch (columnCount)
@@ -69,7 +64,7 @@ namespace MergeCsv
             // Set chart properties.
             graphTitle = graphTitle + $"{start} - {end}";
             var seriesCollection = (SeriesCollection) chart.SeriesCollection();
-            Series s1 = seriesCollection.NewSeries();
+            var s1 = seriesCollection.NewSeries();
             s1.Name = "Border value";
             s1.MarkerStyle = XlMarkerStyle.xlMarkerStyleAutomatic;
             s1.Values = worksheet.Range["G1", "G15"];
@@ -81,7 +76,7 @@ namespace MergeCsv
                 ValueTitle: yAxis);
 
             // Save.
-            workbook.SaveAs(inputFolder + "Chart.xlsx");
+            workbook.Save();
         }
     }
 }

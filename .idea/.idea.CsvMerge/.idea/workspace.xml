@@ -21,7 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60982cf2-2031-4259-a9df-6ad45e728baa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MergeCsv/Chart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/Chart.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MergeCsv/MergeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/MergeData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +150,7 @@
       <workItem from="1606910674496" duration="647000" />
       <workItem from="1606911347023" duration="2899000" />
       <workItem from="1606914773034" duration="21267000" />
-      <workItem from="1607325051960" duration="5519000" />
+      <workItem from="1607325051960" duration="5851000" />
     </task>
     <task id="LOCAL-00001" summary="added conversion to 2 files for each STB">
       <created>1606557203410</created>
@@ -299,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607332160578</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added no date solution">
+      <created>1607332691052</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607332691052</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +361,8 @@
     <MESSAGE value="added max values and stopwatch" />
     <MESSAGE value="fixes to Any()" />
     <MESSAGE value="files are now saved successfully" />
-    <option name="LAST_COMMIT_MESSAGE" value="files are now saved successfully" />
+    <MESSAGE value="added no date solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="added no date solution" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="183" key="#Deployment" timestamp="1606911204941">
@@ -385,22 +393,22 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2758" y="423" key="Github.ShareDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606493867449" />
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1607332579154">
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1607332918736">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332579154" />
-    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1607332579154">
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332918736" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1607332918736">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332579154" />
-    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1607332579154">
+    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332918736" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1607332918736">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332579154" />
-    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1607332579154">
+    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332918736" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1607332918736">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332579154" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332918736" />
     <state x="2472" y="257" key="Rider.ProjectTemplateDialog.Size" timestamp="1606285449059">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -417,10 +425,10 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2766" y="439" key="VCS.EditChangelistDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606911174586" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1607332291034">
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1607332692604">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332291034" />
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607332692604" />
     <state x="2012" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1606906380375">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>

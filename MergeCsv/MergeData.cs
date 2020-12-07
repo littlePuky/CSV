@@ -13,7 +13,6 @@ namespace MergeCsv
             string whatToConvert = Console.ReadLine();
             Console.Write("Specify CSV dir: ");
             string inputDir = Console.ReadLine();
-            Console.WriteLine("Date to convert: ");
             Console.Write("Start date: ");
             string start = Console.ReadLine();
             startDate = start=="" ? DateTime.MinValue : Convert.ToDateTime(start + " 12:00:00 AM");
