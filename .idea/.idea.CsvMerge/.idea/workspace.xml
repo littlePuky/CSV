@@ -21,9 +21,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60982cf2-2031-4259-a9df-6ad45e728baa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/MergeCsv.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/MergeCsv.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/MergeCsv1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/MergeCsv1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/MergeCsv.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/MergeCsv.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/MergeCsv1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/MergeCsv1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CsvMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeCsv/Chart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/Chart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeCsv/MergeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/MergeData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MergeCsv/Merge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MergeCsv/Merge.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +58,11 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/MergeCsv/MergeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp1/obj/Debug/net48/.NETFramework,Version=v4.8.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/a1bg470430/Desktop/CsvMerge/CsvMerge/MergeCsv/MergeData.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MergeCsv/obj/Debug/net48/.NETFramework,Version=v4.8.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MergeCsv/Merge.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MergeCsv/MergeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp1/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MergeCsv/Merge.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MergeCsv/obj/Debug/net48/.NETFramework,Version=v4.8.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,9 +77,9 @@
         <option value="$PROJECT_DIR$/MergeCsv/asd.cs" />
         <option value="$PROJECT_DIR$/MergeCsv/ChartOne.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/MergeCsv/Merge.cs" />
-        <option value="$PROJECT_DIR$/MergeCsv/MergeData.cs" />
         <option value="$PROJECT_DIR$/MergeCsv/Chart.cs" />
+        <option value="$PROJECT_DIR$/MergeCsv/MergeData.cs" />
+        <option value="$PROJECT_DIR$/MergeCsv/Merge.cs" />
       </list>
     </option>
   </component>
@@ -85,7 +95,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="dotNetConsole" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.MergeCsv">
@@ -152,7 +162,10 @@
       <workItem from="1606910674496" duration="647000" />
       <workItem from="1606911347023" duration="2899000" />
       <workItem from="1606914773034" duration="21267000" />
-      <workItem from="1607325051960" duration="6646000" />
+      <workItem from="1607325051960" duration="7346000" />
+      <workItem from="1607409348370" duration="3933000" />
+      <workItem from="1607541505689" duration="2336000" />
+      <workItem from="1607928280119" duration="151000" />
     </task>
     <task id="LOCAL-00001" summary="added conversion to 2 files for each STB">
       <created>1606557203410</created>
@@ -322,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607333316043</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fixed chart title if no date values are present">
+      <created>1607333857453</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1607333857453</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +400,8 @@
     <MESSAGE value="added no date solution" />
     <MESSAGE value="end result-&gt; one file with chart" />
     <MESSAGE value="final result from &quot;a1&quot; is xlsx file with chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="final result from &quot;a1&quot; is xlsx file with chart" />
+    <MESSAGE value="fixed chart title if no date values are present" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed chart title if no date values are present" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="183" key="#Deployment" timestamp="1606911204941">
@@ -411,30 +432,40 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2758" y="423" key="Github.ShareDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606493867449" />
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1607333536295">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1607544177243">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607333536295" />
-    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1607333536294">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607438188384" />
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1607544177243" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1607544177243">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607333536294" />
-    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1607333536294">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607438188384" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1607544177243" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1607544177243">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607333536294" />
-    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1607333536294">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607438188384" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1607544177243" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1607544177243">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607333536294" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607438188384" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1607544177243" />
     <state x="2472" y="257" key="Rider.ProjectTemplateDialog.Size" timestamp="1606285449059">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2472" y="257" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606285449059" />
-    <state x="2381" y="170" key="SettingsEditor" timestamp="1606985394066">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state x="734" y="235" key="RollbackChangesDialog" timestamp="1607541547770">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="734" y="235" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1607541547770" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1607928431233">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607928431233" />
     <state x="2381" y="170" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606985394066" />
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607544164816" />
     <state x="2727" y="438" key="VCS.ChangelistChooser" timestamp="1606912295243">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -443,21 +474,27 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2766" y="439" key="VCS.EditChangelistDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606911174586" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1607333318103">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1607928322023">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607333318103" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607928322023" />
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1607333859553" />
     <state x="2012" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1606906380375">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2012" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606906380375" />
+    <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607928346444">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607928346444" />
     <state x="2536" y="243" key="run.anything.popup" timestamp="1606978055009">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2536" y="243" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606978055009" />
-    <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606985345611">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607928424370">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1607928424370" />
     <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1606985345611" />
   </component>
 </project>

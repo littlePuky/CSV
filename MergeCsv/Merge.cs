@@ -161,10 +161,15 @@ namespace MergeCsv
             x.Cells[15, 5] = "KPI_30_Standby";
             x.Cells[15, 7] = "15.0";
             x.Range["F15"].Formula = "=AVERAGEIF(B:BT,\"KPI_30_Standby_UntilStream_results\",D:D)";
+            x.Cells[16, 5] = "ZAP_Video";
+            x.Cells[16, 7] = "1.2";
+            x.Range["F16"].Formula = "=AVERAGEIF(B:BT,\"KPI_2_ZapTimeNew_video_results\",D:D)";
+            x.Cells[17, 5] = "ZAP_Audio";
+            x.Cells[17, 7] = "3.0";
+            x.Range["F17"].Formula = "=AVERAGEIF(B:BT,\"KPI_2_ZapTimeNew_audio_results\",D:D)";
             sheet.SaveAs(output + ".xlsx", Excel.XlFileFormat.xlOpenXMLWorkbook, Type.Missing, Type.Missing,
-                Type.Missing, Type.Missing, AccessMode: Excel.XlSaveAsAccessMode.xlNoChange,
-                ConflictResolution: Type.Missing, AddToMru: Type.Missing,
-                TextCodepage: Type.Missing, TextVisualLayout: Type.Missing, Local: Type.Missing);
+                Type.Missing, Type.Missing, Excel.XlSaveAsAccessMode.xlNoChange, Type.Missing, Type.Missing,
+                Type.Missing, Type.Missing, Local: Type.Missing);
             File.Delete(input);
             excel.Quit();
         }
